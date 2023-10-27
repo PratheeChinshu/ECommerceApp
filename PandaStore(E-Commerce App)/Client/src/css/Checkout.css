@@ -1,0 +1,16 @@
+.cont{
+    background-color: rgb(240, 182, 182);  /* Light Red */
+    color: white;
+    width: 250px;
+  height:500px;
+}
+.btn-purchase {
+    background-color: rgb(151,69,69);  /* Light Red */
+    color: white;
+    width: 140px;
+  height:60px;
+  border-color:  rgb(151,69,69);
+  border-right:  rgb(151,69,69);
+  border-bottom:  rgb(151,69,69);
+  border-radius: 12px;
+  }
