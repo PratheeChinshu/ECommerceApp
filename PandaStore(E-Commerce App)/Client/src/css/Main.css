@@ -1,0 +1,269 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(148, 0, 25); /* Dark Red */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(148, 0, 25); /* Light Red */
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-bar button {
+  padding: 0.5rem;
+  background-color: rgb(148, 0, 25); /* Dark Red */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Styles for the Carousel */
+.carousel-container {
+  align-items: center;
+  width: 100%; /* Adjust to your preferred width */
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 1000px;
+  height: 360px;
+  img {
+    width: 1000px;
+    border-radius: 5px;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff; /* White background */
+}
+.hero-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cta-button,
+.button-add-to-cart {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Add some space between buttons and content */
+}
+
+.cta-button {
+  background-color: rgb(148, 0, 25); /* Dark Red */
+  color: #fff;
+}
+
+.cta-button:hover {
+  background-color: rgb(120, 0, 20); /* Darker Dark Red */
+}
+
+.button-add-to-cart {
+  background-color: rgb(151, 69, 69); /* Light Red */
+  color: white;
+}
+
+.button-add-to-cart:hover {
+  background-color: rgb(130, 59, 59); /* Darker Light Red */
+}
+
+.featured-products {
+  padding: 2rem;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ddd;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background: rgb(148, 0, 25); /* Dark Red */
+  color: #0e0d0d;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about-us {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.header img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.gif {
+  flex: 1;
+  padding: 20px;
+  position: relative; /* Relative positioning for overlays */
+}
+
+.info {
+  flex: 1; /* To make it fill the remaining space */
+  padding: 20px;
+}
+
+.info h2 {
+  font-size: 28px; /* Reduce the font size slightly */
+  margin-bottom: 10px;
+  color: #ff69b4; /* Pink color, adjust as needed */
+  font-style: italic; /* Add italic style */
+  font-weight: bold; /* Add bold style for emphasis */
+  font-family: "Dancing Script", cursive; /* Use a cute and pretty font */
+  text-transform: uppercase; /* Convert text to uppercase for a playful look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.info p {
+  font-size: 18px; /* Reduce the font size slightly */
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333; /* Adjust text color */
+  font-family: "Dancing Script", cursive; /* Use the same cute and pretty font */
+  text-transform: uppercase; /* Apply uppercase for consistency */
+}
+
+.gif-overlay {
+  background: rgba(255, 255, 255, 0.7); /* White background with 70% opacity */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333; /* Adjust text color */
+  font-size: 20px; /* Reduce the font size slightly */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 10px; /* Add a slight border radius for a softer look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+footer {
+  background: rgb(148, 0, 25); /* Dark Red */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Add this CSS to your Main.css file or a separate stylesheet */
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.gif-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.text-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Make the text card fit the webpage width */
+}
+
+.hero {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gif-card img {
+  max-width: 100%; /* Ensure the GIF fits within the card */
+}
+
+/* Add this CSS to style the small logout button */
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333; /* You can adjust the color to your preference */
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #ddd; /* Change the background color on hover if desired */
+}

@@ -1,0 +1,126 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #f7f6f3;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(173, 162, 153) 0%,
+    rgb(255, 255, 255) 35%,
+    rgba(255, 255, 255, 0.671) 100%
+  );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_container {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgb(236, 98, 98);
+}
+
+.form_container > h2 {
+  margin-block: 1rem;
+  padding-block: 0.6rem;
+  color: rgb(236, 118, 118);
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form_container input {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(255, 87, 109);
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.form_container input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.form_container button {
+  background-color: rgb(187, 87, 87);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+span a {
+  text-decoration: none;
+  color: rgb(148, 0, 25);
+}
+
+.home_page {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home_page span {
+  color: rgb(151, 69, 69);
+}
+
+.home_page button {
+  background-color: rgb(83, 52, 27);
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  transition: ease-in 0.3s;
+  border: none;
+}
+
+.home_page button:hover {
+  background-color: rgb(10, 10, 10);
+}
+
+/* @media only screen and (max-width: 1200px){
+  .home_page{
+    font-size: 1.5rem;
+  } */
+/* .home_page button {
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+  }
+} */

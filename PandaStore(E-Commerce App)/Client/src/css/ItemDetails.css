@@ -1,0 +1,34 @@
+
+
+.item-details-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(151, 69, 69);
+}
+
+.item-image {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.item-info {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: rgb(252, 252, 252);
+}
+
+.item-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item-info p {
+  color: #666;
+  margin: 5px 0;
+}
+

@@ -1,0 +1,62 @@
+/* Checkout.css */
+.cont {
+  background-color: rgb(240, 182, 182); /* Light Red */
+  color: white;
+  width: 300px;
+  height: 600px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/crcard.jpg"); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#checkout label {
+  margin-top: 10px;
+  display: block;
+}
+
+#exp-container {
+  display: flex;
+  gap: 10px;
+}
+
+#exp-label,
+#cvc-label {
+  margin-top: 10px;
+  display: block;
+}
+
+.btn-purchase,
+.button-small {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-purchase {
+  background-color: rgb(0, 52, 100); /* Light Red */
+  color: white;
+  border: none;
+}
+
+.button-small {
+  background-color: rgb(0, 52, 100);
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-small:hover {
+  background-color: rgb(0, 0, 0);
+}

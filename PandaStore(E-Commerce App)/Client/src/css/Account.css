@@ -1,0 +1,423 @@
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #ff979739;
+}
+
+.top-right-settings {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e93434;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #e97070;
+  cursor: pointer;
+}
+
+/* Style the dropdown menu */
+.top-right-settings .dropdown-menu {
+  background-color: #f5f5f5; /* Light grey background for the dropdown menu */
+  color: #643838; /* Dark grey text color */
+  border: 1px solid #ccc; /* Light grey border for the dropdown menu */
+}
+
+/* Style the dropdown items */
+.top-right-settings .dropdown-item {
+  color: #cc6464; /* Dark grey text color for dropdown items */
+}
+
+/* Style the dropdown items on hover */
+.top-right-settings .dropdown-item:hover {
+  background-color: #db0f0f; /* Pink background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+/* Left column styles */
+.left-column {
+  flex: 1;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(233, 115, 115, 0.1); /* Subtle shadow */
+}
+
+/* Right column styles */
+.right-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Add stylish styles for the user profile */
+.user-profile {
+  background-color: #fff;
+  border: 2px solid #850808; /* Black border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000; /* Black text color */
+  font-size: 18px;
+}
+
+.user-profile h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-profile p {
+  margin: 10px 0;
+}
+
+/* Style the Change Password dropdown container */
+.change-password-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style the change-password-container */
+.change-password-container {
+  text-align: center;
+}
+
+/* Style the dropdown content for Change Password */
+.change-password-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333; /* Dark grey text color */
+  border: 2px solid #000; /* Black border */
+
+  /* Define the blink animation for the button on hover */
+  animation: blink 0.5s linear infinite alternate;
+}
+
+/* Style the Change Password dropdown on hover */
+.change-password-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the text inside the dropdown for Change Password */
+.change-password-dropdown .dropdown-content label {
+  display: block;
+  color: #333; /* Dark grey text color */
+  font-size: 14px; /* Adjusted font size for compactness */
+  margin-bottom: 5px; /* Adjusted margin for compactness */
+}
+
+/* Style the input fields in Change Password dropdown */
+.change-password-dropdown .dropdown-content input {
+  width: 100%;
+  padding: 4px; /* Adjusted padding for compactness */
+  margin: 4px 0;
+  box-sizing: border-box;
+  font-size: 12px; /* Adjusted font size for compactness */
+  border: 1px solid #ccc; /* Add a border for clarity */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the Change Password button in the dropdown */
+.change-password-dropdown .dropdown-content button {
+  background-color: #db0f0f; /* Pink background */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 8px 16px; /* Adjusted padding for compactness */
+  margin: 8px 0; /* Adjusted margin for compactness */
+  cursor: pointer;
+  font-size: 14px; /* Adjusted font size for compactness */
+}
+
+/* Define the blink animation for the button on hover */
+@keyframes blink {
+  from {
+    border: 2px solid #000; /* Black border */
+  }
+  to {
+    border: 2px solid #db0f0f; /* Pink border */
+  }
+}
+
+/* Style the dropdown items in the Settings dropdown */
+.top-right-settings .dropdown .dropdown-menu label {
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Dark grey text color */
+  display: block;
+}
+
+/* Style the select input for Language in the Settings dropdown */
+.top-right-settings .dropdown .dropdown-menu select {
+  font-size: 14px; /* Smaller font size */
+  color: #000; /* Black text color */
+  background-color: #fff; /* White background */
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Style the checkbox labels for Dark Mode in the Settings dropdown */
+.top-right-settings .dropdown .dropdown-menu .checkbox-label {
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Dark grey text color */
+  display: flex;
+  align-items: center;
+}
+
+/* Style the toggle switches for Dark Mode in the Settings dropdown */
+.top-right-settings
+  .dropdown
+  .dropdown-menu
+  .checkbox-label
+  input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Style the text inside the dropdown for Language and Dark Mode */
+.top-right-settings .dropdown .dropdown-menu .language-text,
+.top-right-settings .dropdown .dropdown-menu .dark-mode-text {
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Dark grey text color */
+}
+
+/* CSS for the profile picture */
+.profile-picture {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+
+/* Container styles */
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #65575739;
+}
+
+/* Top right settings */
+.top-right-settings {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f5f5f5; /* Light grey background for the settings */
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #333; /* Dark grey text color */
+  cursor: pointer;
+}
+
+/* Style the dropdown menu */
+.top-right-settings .dropdown-menu {
+  background-color: #f5f5f5; /* Light grey background for the dropdown menu */
+  color: #643838; /* Dark grey text color */
+  border: 1px solid #ccc; /* Light grey border for the dropdown menu */
+}
+
+/* Style the dropdown items */
+.top-right-settings .dropdown-item {
+  color: #333; /* Dark grey text color for dropdown items */
+}
+
+/* Style the dropdown items on hover */
+.top-right-settings .dropdown-item:hover {
+  background-color: #db0f0f; /* Pink background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+/* Left column styles */
+.left-column {
+  flex: 1;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Right column styles */
+.right-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Add stylish styles for the user profile */
+.user-profile {
+  background-color: #fff;
+  border: 2px solid #000; /* Black border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000; /* Black text color */
+  font-size: 18px;
+}
+
+.user-profile h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-profile p {
+  margin: 10px 0;
+}
+
+/* Style the Change Password dropdown container */
+.change-password-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style the change-password-container */
+.change-password-container {
+  text-align: center;
+}
+
+/* Style the dropdown content for Change Password */
+.change-password-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333; /* Dark grey text color */
+  border: 2px solid #000; /* Black border */
+
+  /* Define the blink animation for the button on hover */
+  animation: blink 0.5s linear infinite alternate;
+}
+
+/* Style the Change Password dropdown on hover */
+.change-password-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the text inside the dropdown for Change Password */
+.change-password-dropdown .dropdown-content label {
+  display: block;
+  color: #333; /* Dark grey text color */
+  font-size: 14px; /* Adjusted font size for compactness */
+  margin-bottom: 5px; /* Adjusted margin for compactness */
+}
+
+/* Style the input fields in Change Password dropdown */
+.change-password-dropdown .dropdown-content input {
+  width: 100%;
+  padding: 4px; /* Adjusted padding for compactness */
+  margin: 4px 0;
+  box-sizing: border-box;
+  font-size: 12px; /* Adjusted font size for compactness */
+  border: 1px solid #ccc; /* Add a border for clarity */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the Change Password button in the dropdown */
+.change-password-dropdown .dropdown-content button {
+  background-color: #db0f0f; /* Pink background */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 8px 16px; /* Adjusted padding for compactness */
+  margin: 8px 0; /* Adjusted margin for compactness */
+  cursor: pointer;
+  font-size: 14px; /* Adjusted font size for compactness */
+}
+
+/* Define the blink animation for the button on hover */
+@keyframes blink {
+  from {
+    border: 2px solid #000; /* Black border */
+  }
+  to {
+    border: 2px solid #db0f0f; /* Pink border */
+  }
+}
+
+/* Style the dropdown items in the Settings dropdown */
+.top-right-settings .dropdown .dropdown-menu label {
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Dark grey text color */
+  display: block;
+}
+
+/* Style the select input for Language in the Settings dropdown */
+.top-right-settings .dropdown .dropdown-menu select {
+  font-size: 14px; /* Smaller font size */
+  color: #000; /* Black text color */
+  background-color: #fff; /* White background */
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Style the checkbox labels for Dark Mode in the Settings dropdown */
+.top-right-settings .dropdown .dropdown-menu .checkbox-label {
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Dark grey text color */
+  display: flex;
+  align-items: center;
+}
+
+/* Style the toggle switches for Dark Mode in the Settings dropdown */
+.top-right-settings
+  .dropdown
+  .dropdown-menu
+  .checkbox-label
+  input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Style the text inside the dropdown for Language and Dark Mode */
+.top-right-settings .dropdown .dropdown-menu .language-text,
+.top-right-settings .dropdown .dropdown-menu .dark-mode-text {
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Dark grey text color */
+}
+
+.profile-picture {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+
+/* Blinking effect on hover */
+.profile-picture:hover {
+  animation: blink 1s infinite;
+}
+
+/* Define the blink animation */
+@keyframes blink {
+  0%,
+  100% {
+    border: 2px solid #db0f0f; /* Pink border on blink */
+  }
+}

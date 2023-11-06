@@ -1,0 +1,128 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(148, 0, 25); /* Dark Red */
+  color: #080808;
+  text-align: center;
+  padding: 1rem;
+}
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(151, 69, 69); /* Light Red */
+  padding: 0.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(151, 69, 69); /* Light Red */
+  padding: 0.5rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-bar button {
+  padding: 0.5rem;
+  background-color: rgb(148, 0, 25); /* Dark Red */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Styles for the Carousel */
+.carousel-container {
+  align-items: center;
+  width: 100%; /* Adjust to your preferred width */
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 1000px;
+  height: 360px;
+  img {
+    width: 1000px;
+    border-radius: 5px;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #fff; /* White background */
+}
+
+.cta-button,
+.button-add-to-cart {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Add some space between buttons and content */
+}
+
+.cta-button {
+  background-color: rgb(148, 0, 25); /* Dark Red */
+  color: #fff;
+}
+
+.cta-button:hover {
+  background-color: rgb(22, 6, 9); /* Darker Dark Red */
+}
+
+.button-add-to-cart {
+  background-color: rgb(0, 0, 0); /* Light Red */
+  color: white;
+}
+
+.button-add-to-cart:hover {
+  background-color: rgb(19, 13, 13); /* Darker Light Red */
+}
+
+.featured-products {
+  padding: 2rem;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ddd;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background: rgb(148, 0, 25); /* Dark Red */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
