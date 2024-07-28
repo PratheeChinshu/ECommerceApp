@@ -1,7 +1,7 @@
 
 # PandaShop
 
-![Project Logo](./Client/src/image/logo.png)
+![Project Logo](./src/image/logo.png)
 
 ## Description
 
