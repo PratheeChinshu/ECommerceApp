@@ -3,7 +3,7 @@ Here's a simple and well-structured README file for your project:
 ```markdown
 # PandaShop
 
-![Project Logo](./src/image/logo.png)
+![Project Logo](./Client/src/image/logo.png)
 
 ## Description
 
@@ -47,7 +47,7 @@ PandaShop is a full-stack web application built using React, Node.js, and Expres
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/PandaShop.git
+   git clone https://github.com/Shruthajshetty/PandaShop.git
    ```
 2. **Navigate to the project directory:**
    ```bash
@@ -77,27 +77,6 @@ PandaShop is a full-stack web application built using React, Node.js, and Expres
    npm start
    ```
 
-## Project Structure
-
-```
-PandaShop/
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   └── server.js
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   ├── components/
-│   ├── pages/
-│   └── App.js
-├── src/
-│   └── image/
-│       └── logo.png
-├── README.md
-└── package.json
-```
 
 ## Contributing
 
@@ -120,10 +99,4 @@ PandaShop/
 
 This project is licensed under the MIT License.
 
-## Acknowledgements
 
-- Thanks to all the contributors who helped in the development of this project.
-- Special thanks to the open-source community for providing valuable resources and support.
-```
-
-Feel free to modify and expand this README file to better suit your project's specific needs.
