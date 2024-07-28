@@ -1,6 +1,4 @@
-Here's a simple and well-structured README file for your project:
 
-```markdown
 # PandaShop
 
 ![Project Logo](./Client/src/image/logo.png)
